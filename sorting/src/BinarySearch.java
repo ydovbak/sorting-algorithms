@@ -30,9 +30,6 @@ public class BinarySearch {
         int middle = (low + high + 1)/2;
         int searchIndex = -1;
 
-        //Printing the array
-        System.out.println( printArray(low, high));
-
         do
         {
             //Checking middle element
@@ -57,22 +54,11 @@ public class BinarySearch {
         return searchIndex;
     }
 
-
-    public String printArray(int low, int high)
+    public void print()
     {
-        StringBuilder temporary = new StringBuilder();
-
-        // output spaces for alignment
-        for (int i = 0; i < low; i++)
-            temporary.append(" ");
-
-        // output elements left in array
-        for (int i = low; i <= high; i++)
-            temporary.append(data[i] + " ");
-
-        temporary.append("\n");
-        return temporary.toString();
-    } // end method remainingElements
-
-
+        for (int el :data) {
+            System.out.print(el + ", ");
+        }
+        System.out.println();
+    }
 }
