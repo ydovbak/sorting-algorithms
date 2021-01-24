@@ -20,14 +20,11 @@ public class BubbleSort {
         int length = data.length;
         for (int i = 0; i < length-1; i++)
         {
-            for (int j = i+1; j < length; j++)
-            {
-                if(data[i] > data[j])
-                {
+            for (int j = i+1; j < length; j++) {
+                if (data[i] > data[j]) {
                     swap(data, i, j);
                 }
             }
-            //length--;
         }
     }
 

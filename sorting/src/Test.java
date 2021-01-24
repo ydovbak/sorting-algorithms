@@ -7,10 +7,16 @@ public class Test {
         System.out.println("Index of element " + searchElement + " is " + searchIndex);
 
         BubbleSort bubble = new BubbleSort(20);
-        System.out.println("Bubble");
+        System.out.println("\nBubble");
         bubble.print();
         bubble.sort();
         bubble.print();
+
+        SelectionSort selection = new SelectionSort(20);
+        System.out.println("\nSelection");
+        selection.print();
+        selection.sort();
+        selection.print();
 
     }
 }
