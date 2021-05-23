@@ -18,5 +18,11 @@ public class Test {
         selection.sort();
         selection.print();
 
+        InsertionSort insertin = new InsertionSort(20);
+        System.out.println("\nInsertion");
+        insertin.print();
+        insertin.sort();
+        insertin.print();
+
     }
 }
